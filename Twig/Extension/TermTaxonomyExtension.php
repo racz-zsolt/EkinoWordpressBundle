@@ -13,6 +13,7 @@ namespace Ekino\WordpressBundle\Twig\Extension;
 use Ekino\WordpressBundle\Manager\OptionManager;
 use Ekino\WordpressBundle\Model\TermTaxonomy;
 use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 /**
  * Class TermTaxonomyExtension.
  *
@@ -41,7 +42,7 @@ class TermTaxonomyExtension extends AbstractExtension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('wp_get_term_link', [$this, 'getTermLink']),
+            new TwigFunction('wp_get_term_link', [$this, 'getTermLink']),
         ];
     }
 

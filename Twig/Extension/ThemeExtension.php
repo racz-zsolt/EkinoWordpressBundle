@@ -10,6 +10,7 @@
 
 namespace Ekino\WordpressBundle\Twig\Extension;
 use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 /**
  * Class ThemeExtension.
  *
@@ -35,10 +36,10 @@ class ThemeExtension extends AbstractExtension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('wp_get_header', [$this, 'getHeader'], ['is_safe' => ['html']]),
-            new \Twig_SimpleFunction('wp_get_sidebar', [$this, 'getSidebar'], ['is_safe' => ['html']]),
-            new \Twig_SimpleFunction('wp_get_footer', [$this, 'getFooter'], ['is_safe' => ['html']]),
-            new \Twig_SimpleFunction('wp_get_template_part', [$this, 'getTemplatePart'], ['is_safe' => ['html']]),
+            new TwigFunction('wp_get_header', [$this, 'getHeader'], ['is_safe' => ['html']]),
+            new TwigFunction('wp_get_sidebar', [$this, 'getSidebar'], ['is_safe' => ['html']]),
+            new TwigFunction('wp_get_footer', [$this, 'getFooter'], ['is_safe' => ['html']]),
+            new TwigFunction('wp_get_template_part', [$this, 'getTemplatePart'], ['is_safe' => ['html']]),
         ];
     }
 
