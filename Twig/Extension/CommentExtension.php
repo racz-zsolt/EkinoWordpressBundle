@@ -12,7 +12,7 @@ namespace Ekino\WordpressBundle\Twig\Extension;
 
 use Ekino\WordpressBundle\Manager\CommentManager;
 use Ekino\WordpressBundle\Model\Comment;
-
+use Twig\Extension\AbstractExtension;
 /**
  * Class CommentExtension.
  *

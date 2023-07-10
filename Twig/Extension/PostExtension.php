@@ -14,7 +14,6 @@ use Ekino\WordpressBundle\Entity\Post;
 use Ekino\WordpressBundle\Manager\PostManager;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
-
 /**
  * Class PostExtension.
  *

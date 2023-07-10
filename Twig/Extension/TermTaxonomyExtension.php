@@ -12,7 +12,7 @@ namespace Ekino\WordpressBundle\Twig\Extension;
 
 use Ekino\WordpressBundle\Manager\OptionManager;
 use Ekino\WordpressBundle\Model\TermTaxonomy;
-
+use Twig\Extension\AbstractExtension;
 /**
  * Class TermTaxonomyExtension.
  *

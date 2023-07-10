@@ -11,7 +11,7 @@
 namespace Ekino\WordpressBundle\Twig\Extension;
 
 use Ekino\WordpressBundle\Manager\OptionManager;
-
+use Twig\Extension\AbstractExtension;
 /**
  * Class OptionExtension.
  *

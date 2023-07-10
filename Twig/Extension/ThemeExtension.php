@@ -9,7 +9,7 @@
  */
 
 namespace Ekino\WordpressBundle\Twig\Extension;
-
+use Twig\Extension\AbstractExtension;
 /**
  * Class ThemeExtension.
  *
