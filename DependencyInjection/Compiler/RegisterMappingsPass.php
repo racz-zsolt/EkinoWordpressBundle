@@ -115,7 +115,7 @@ class RegisterMappingsPass implements CompilerPassInterface
     public static function createOrmMappingDriver(array $mappings)
     {
         $arguments = [$mappings, '.orm.xml'];
-        $locator = new Definition('Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator', $arguments);
+        $locator = new Definition('Doctrine\Persistence\Mapping\Driver\SymfonyFileLocator', $arguments);
         $driver = new Definition('Doctrine\ORM\Mapping\Driver\XmlDriver', [$locator]);
 
         return new self($driver, 'doctrine.orm.%s_metadata_driver', $mappings, 'ekino_wordpress.backend_type_orm', 'doctrine.default_entity_manager');
