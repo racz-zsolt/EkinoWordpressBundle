@@ -20,7 +20,7 @@ use Ekino\WordpressBundle\Model\TermTaxonomy;
  *
  * @author Xavier Coureau <xav@takeatea.com>
  */
-class TermTaxonomyExtension extends \Twig_Extension
+class TermTaxonomyExtension extends AbstractExtension
 {
     /**
      * @var OptionManager

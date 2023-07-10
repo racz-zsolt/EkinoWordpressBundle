@@ -12,13 +12,15 @@ namespace Ekino\WordpressBundle\Twig\Extension;
 
 use Ekino\WordpressBundle\Entity\Post;
 use Ekino\WordpressBundle\Manager\PostManager;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
 /**
  * Class PostExtension.
  *
  * This extension provides native Wordpress functions into Twig.
  */
-class PostExtension extends \Twig_Extension
+class PostExtension extends AbstractExtension
 {
     /**
      * @var PostManager

@@ -20,7 +20,7 @@ use Ekino\WordpressBundle\Model\Comment;
  *
  * @author Xavier Coureau <xav@takeatea.com>
  */
-class CommentExtension extends \Twig_Extension
+class CommentExtension extends AbstractExtension
 {
     /**
      * @var CommentManager

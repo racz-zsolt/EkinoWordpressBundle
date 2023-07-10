@@ -17,7 +17,7 @@ namespace Ekino\WordpressBundle\Twig\Extension;
  *
  * @author Vincent Composieux <vincent.composieux@gmail.com>
  */
-class ThemeExtension extends \Twig_Extension
+class ThemeExtension extends AbstractExtension
 {
     /**
      * Returns the name of the extension.

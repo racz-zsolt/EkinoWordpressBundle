@@ -17,7 +17,7 @@ use Ekino\WordpressBundle\Manager\PostMetaManager;
  *
  * This extension provides native Wordpress functions into Twig.
  */
-class PostMetaExtension extends \Twig_Extension
+class PostMetaExtension extends AbstractExtension
 {
     /**
      * @var PostMetaManager

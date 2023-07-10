@@ -17,7 +17,7 @@ use Ekino\WordpressBundle\Manager\OptionManager;
  *
  * This extension provides native Wordpress functions into Twig.
  */
-class OptionExtension extends \Twig_Extension
+class OptionExtension extends AbstractExtension
 {
     /**
      * @var OptionManager
