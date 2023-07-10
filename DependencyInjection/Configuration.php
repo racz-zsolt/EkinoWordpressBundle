@@ -30,7 +30,7 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
+        $treeBuilder = new TreeBuilder('ekino_wordpress');
         $rootNode = $treeBuilder->root('ekino_wordpress');
 
         $rootNode
