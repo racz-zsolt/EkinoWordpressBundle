@@ -12,7 +12,7 @@ namespace Ekino\WordpressBundle\Listener;
 
 use Ekino\WordpressBundle\Wordpress\Wordpress;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
 /**
@@ -49,9 +49,9 @@ class WordpressRequestListener
     /**
      * On kernel request method.
      *
-     * @param GetResponseEvent $event
+     * @param RequestEvent $event
      */
-    public function onKernelRequest(GetResponseEvent $event)
+    public function onKernelRequest(RequestEvent $event)
     {
         $request = $event->getRequest();
 
