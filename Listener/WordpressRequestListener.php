@@ -56,7 +56,7 @@ class WordpressRequestListener
         $request = $event->getRequest();
 
         // Loads Wordpress source code in order to allow use of WordPress functions in Symfony.
-        if ('ekino_wordpress_catchall' !== $request->attributes->get('_route')) {
+        if ('ekino-wp-route' !== $request->attributes->get('_route')) {
             $this->wordpress->loadWordpress();
         }
 
