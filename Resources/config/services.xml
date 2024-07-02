@@ -12,10 +12,6 @@
             <argument>%ekino.wordpress.install_directory%</argument>
             <argument>%ekino.wordpress.globals%</argument>
         </service>
-        <service id="Ekino\WordpressBundle\Controller\WordpressController">
-            <argument>%ekino.wordpress.wordpress%</argument>
-            <tag name="controller.service_arguments"/>
-        </service>
 
         <!-- Subscribers -->
 
